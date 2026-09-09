@@ -32,7 +32,7 @@ For example, a button should be rendered differently depending on whether it is 
 
 A Layout is responsible for positioning and sizing views to structure the UI.
 
-Pano includes several layouts for constructing interfaces, try them out by running the [Layout Sample App](./samples/layout/)
+Pano includes several layouts for constructing interfaces, try them out by running the [Layout Sample App](./samples/layouts/)
 
 ### Edge
 
@@ -58,7 +58,7 @@ A Tab Layout enables multiple views to be grouped and navigated.
 
 A Widget is a view that the user can interact with.
 
-Pano includes several widgets to enable interactions, try them out by running the [Widget Sample App](./samples/widget/)
+Pano includes several widgets to enable interactions, try them out by running the [Widget Sample App](./samples/widgets/)
 
 ### Button
 
