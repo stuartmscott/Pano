@@ -2,6 +2,7 @@
 #ifndef INCLUDE_PANO_CONSTANTS_H_
 #define INCLUDE_PANO_CONSTANTS_H_
 
+#include <cstdint>
 #include <string>
 
 namespace Pano {
