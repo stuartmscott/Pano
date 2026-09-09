@@ -30,6 +30,7 @@ constexpr std::string ToString(const Alignment a) {
     case Alignment::End:
       return "End";
   }
+  return "Unrecognized Alignment";
 }
 
 enum class Axis {
@@ -47,6 +48,7 @@ constexpr std::string ToString(const Axis a) {
     case Axis::Z:
       return "Z";
   }
+  return "Unrecognized Axis";
 }
 
 enum class Condition : uint8_t {
@@ -114,6 +116,7 @@ constexpr std::string ToString(const Icon i) {
     case Icon::RadioButtonUnselected:
       return "RadioButtonUnselected";
   }
+  return "Unrecognized Icon";
 }
 
 enum class Layer { Background, Foreground };
@@ -125,6 +128,7 @@ constexpr std::string ToString(const Layer l) {
     case Layer::Foreground:
       return "Foreground";
   }
+  return "Unrecognized Layer";
 }
 
 enum class Location {
@@ -148,6 +152,7 @@ constexpr std::string ToString(const Location l) {
     case Location::Right:
       return "Right";
   }
+  return "Unrecognized Location";
 }
 
 enum class Significance {
@@ -207,6 +212,7 @@ constexpr std::string ToString(const Significance s) {
     case Significance::Danger:
       return "Danger";
   }
+  return "Unrecognized Significance";
 }
 
 enum class TextAlignment { Start, Center, End, Justify };
@@ -222,6 +228,7 @@ constexpr std::string ToString(const TextAlignment a) {
     case TextAlignment::Justify:
       return "Justify";
   }
+  return "Unrecognized TextAlignment";
 }
 
 enum class TextTruncation { None, Clip, Ellipsis };
@@ -235,6 +242,7 @@ constexpr std::string ToString(const TextTruncation t) {
     case TextTruncation::Ellipsis:
       return "Ellipsis";
   }
+  return "Unrecognized TextTruncation";
 }
 
 enum class TextWrap { None, Character, Word };
@@ -248,6 +256,7 @@ constexpr std::string ToString(const TextWrap w) {
     case TextWrap::Word:
       return "Word";
   }
+  return "Unrecognized TextWrap";
 }
 
 enum class TextStyle : uint8_t {
@@ -271,6 +280,7 @@ constexpr std::string ToString(const TextStyle t) {
     case TextStyle::Monospace:
       return "Monospace";
   }
+  return "Unrecognized TextStyle";
 }
 
 constexpr TextStyle operator&(TextStyle a, TextStyle b) {
