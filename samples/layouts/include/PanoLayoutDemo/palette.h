@@ -1,0 +1,14 @@
+// Copyright 2026 Stuart Scott
+#ifndef SAMPLES_LAYOUTS_INCLUDE_PANOLAYOUTDEMO_PALETTE_H_
+#define SAMPLES_LAYOUTS_INCLUDE_PANOLAYOUTDEMO_PALETTE_H_
+
+#include <SDL3/SDL.h>
+
+constexpr SDL_Color Palette[]{
+    {0xD2, 0x50, 0x50, 0xFF},
+    {0x82, 0xB4, 0x82, 0xFF},
+    {0x64, 0x8C, 0xD2, 0xFF},
+    {0xFF, 0xFF, 0xB4, 0xFF},
+};
+
+#endif  // SAMPLES_LAYOUTS_INCLUDE_PANOLAYOUTDEMO_PALETTE_H_
