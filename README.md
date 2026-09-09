@@ -32,7 +32,7 @@ For example, a button should be rendered differently depending on whether it is 
 
 A Layout is responsible for positioning and sizing views to structure the UI.
 
-Pano includes several layouts for constructing interfaces, try them out by running the [Layout Sample App](./samples/layout/README.md)
+Pano includes several layouts for constructing interfaces, try them out by running the [Layout Sample App](./samples/layout/)
 
 ### Edge
 
@@ -58,7 +58,7 @@ A Tab Layout enables multiple views to be grouped and navigated.
 
 A Widget is a view that the user can interact with.
 
-Pano includes several widgets to enable interactions, try them out by running the [Widget Sample App](./samples/widget/README.md)
+Pano includes several widgets to enable interactions, try them out by running the [Widget Sample App](./samples/widget/)
 
 ### Button
 
@@ -80,7 +80,7 @@ A RadioButton enabled an option to be selected.
 
 ### RadioGroup
 
-![RadioGroup](./data/golden/RadioGroup_Primary_Enabled_Selected.png)
+![RadioGroup](./data/golden/RadioGroup_Primary_Enabled_Vertical_A.png)
 
 A RadioGroup is a set of RadioButtons that operate with mutual exclusivity.
 
@@ -88,14 +88,14 @@ A RadioGroup is a set of RadioButtons that operate with mutual exclusivity.
 
 Pano includes support for rendering and interacting with text with the TextView and TextEdit widgets respectively.
 
-Try them out by running the [Text Sample App](./samples/text/README.md)
+Try them out by running the [Text Sample App](./samples/text/)
 
 ### Text Alignment
 
 - Vertical - Start, Center, End
 - Horizontal - Start, Center, End, Justified
 
-Start and End in the case is determined by the direction of the font used.
+Start and End in this case is determined by the direction of the font used.
 
 ### Text Truncation
 
@@ -146,10 +146,12 @@ The following list shows the currently supported target platforms.
 
 The following matrix shows which buld/run combinations are supported and verified.
 
+```
          |  MacOS  |  Linux  | Android |   iOS
 ---------+---------+---------+---------+---------
   MacOS  |    Y    |         |         |
   Linux  |         |         |         |
+```
 
 ## Build
 
