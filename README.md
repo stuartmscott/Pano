@@ -122,7 +122,7 @@ Start and End in this case is determined by the direction of the font used.
 
 ## Dependencies
 
-Pano is built on top of (SDL](https://www.libsdl.org).
+Pano is built on top of [SDL](https://www.libsdl.org).
 
 ### MacOS
 
