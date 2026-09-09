@@ -11,6 +11,7 @@
 #include <SDL3/SDL_main.h>
 
 #include <algorithm>
+#include <atomic>
 #include <map>
 #include <string>
 #include <vector>
@@ -56,7 +57,7 @@ class App {
   void Handle(SDL_Event&);
 
  private:
-  std::atomic_bool running_{true};
+  std::atomic<bool> running_{true};
   ColorProvider* color_provider_{nullptr};
   FontProvider* font_provider_{nullptr};
   IconProvider* icon_provider_{nullptr};
