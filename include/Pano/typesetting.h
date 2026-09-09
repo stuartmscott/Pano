@@ -89,7 +89,7 @@ class Typesetter {
         text_wrap_(text_wrap),
         max_width_(max_width),
         max_height_(max_height) {
-    max_lines_ = static_cast<int>(max_height / font->GetHeight());
+    max_lines_ = static_cast<uint32_t>(max_height / font->GetHeight());
   }
   ~Typesetter() { clear_lines(); }
 
@@ -123,7 +123,7 @@ class Typesetter {
   TextWrap text_wrap_{TextWrap::None};
   float max_width_{0};
   float max_height_{0};
-  int max_lines_{0};
+  uint32_t max_lines_{0};
   std::vector<UTFGlyph*>::const_iterator glyph_it_;
   std::vector<UTFGlyph*>::const_iterator glyph_end_;
   std::vector<UTFGlyph*>::const_iterator line_start_;
