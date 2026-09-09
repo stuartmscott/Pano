@@ -139,6 +139,7 @@ Size TextView::GetMinimumSize() const {
       return {std::max(min_line_length_, static_cast<float>(max_x - min_x)),
               font_height};
   }
+  return {};
 }
 
 void TextView::TextViewArtist::Draw(SDL_Renderer* renderer) {
