@@ -36,7 +36,7 @@ void CheckGolden(std::string filename) {
 
     auto success{true};
 
-    const auto count{w * h};
+    const auto count{static_cast<size_t>(w * h)};
     const auto GoldenPixels{(Uint32*)GoldenSurface->pixels};
     const auto SnapshotPixels{(Uint32*)SnapshotSurface->pixels};
     const auto DiffPixels{(Uint32*)DiffSurface->pixels};
