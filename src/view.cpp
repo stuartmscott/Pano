@@ -6,6 +6,7 @@
 
 #include <algorithm>
 #include <bit>
+#include <cmath>
 #include <vector>
 
 namespace Pano {
