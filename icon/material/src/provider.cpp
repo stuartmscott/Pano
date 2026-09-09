@@ -1,5 +1,6 @@
 // Copyright 2026 Stuart Scott
 #include <Pano/icon.h>
+#include <Pano/log.h>
 #include <PanoMaterialIcon/arrow_drop_down.h>
 #include <PanoMaterialIcon/check_box_checked.h>
 #include <PanoMaterialIcon/check_box_unchecked.h>
@@ -47,6 +48,8 @@ SDL_Texture* MaterialIconProvider::create_texture(SDL_Renderer* renderer,
       return load_icon(renderer, icon, radio_button_unselected,
                        radio_button_unselected_len);
   }
+  Error() << "Unsupported Icon: " << ToString(icon) << std::endl;
+  return nullptr;
 }
 
 MaterialIconProvider* CreateMaterialIconProvider() {
