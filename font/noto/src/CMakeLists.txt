@@ -22,8 +22,9 @@ target_sources(${LIBRARY_NAME}
 )
 
 target_link_libraries(${LIBRARY_NAME}
-  PRIVATE
+  PUBLIC
     "libPano"
+  PRIVATE
     "SDL3::SDL3"
     "SDL3_image::SDL3_image"
     "SDL3_ttf::SDL3_ttf"
