@@ -33,12 +33,10 @@ jobs:
 
     - name: Test
       working-directory: ${{github.workspace}}/build
-      run: ctest -C ${{env.BUILD_TYPE}} --output-on-failure
-      id: ctest-job
-      continue-on-error: true
+      run: ctest -C ${{env.BUILD_TYPE}}
 
     - name: Upload
-      if: steps.ctest-job.outcome == 'failure'
+      if: failure()
       uses: actions/upload-artifact@v4
       with:
         name: ctest-artifacts
