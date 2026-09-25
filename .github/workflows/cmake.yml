@@ -34,4 +34,16 @@ jobs:
     - name: Test
       working-directory: ${{github.workspace}}/build
       run: ctest -C ${{env.BUILD_TYPE}} --output-on-failure
+      id: ctest-job
+      continue-on-error: true
+
+    - name: Upload
+      if: steps.ctest-job.outcome == 'failure'
+      uses: actions/upload-artifact@v4
+      with:
+        name: ctest-artifacts
+        path: |
+          build/test/src/*.png
+          build/Testing/Temporary/*
+        retention-days: 5
 
