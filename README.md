@@ -2,7 +2,7 @@
 
 # Pano
 
-Pano is a library for building graphical user interfaces.
+Pano is a framework for building graphical user interfaces.
 
 ## App
 
@@ -32,6 +32,8 @@ For example, a button should be rendered differently depending on whether it is 
 
 A Layout is responsible for positioning and sizing views to structure the UI.
 
+![LayoutDemo](./data/layout.gif)
+
 Pano includes several layouts for constructing interfaces, try them out by running the [Layout Sample App](./samples/layouts/)
 
 ### Edge
@@ -57,6 +59,8 @@ A Tab Layout enables multiple views to be grouped and navigated.
 ## Widget
 
 A Widget is a view that the user can interact with.
+
+![WidgetDemo](./data/widget.gif)
 
 Pano includes several widgets to enable interactions, try them out by running the [Widget Sample App](./samples/widgets/)
 
@@ -87,6 +91,8 @@ A RadioGroup is a set of RadioButtons that operate with mutual exclusivity.
 ## Text
 
 Pano includes support for rendering and interacting with text with the TextView and TextEdit widgets respectively.
+
+![TextDemo](./data/text.gif)
 
 Try them out by running the [Text Sample App](./samples/text/)
 
